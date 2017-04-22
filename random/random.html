@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>随机切换图片</title>
+</head>
+<body>
+	<img src="" id="gitimg">
+</body>
+<script type="text/javascript">
+	arr=['images/1.jpg','images/2.jpg','images/3.jpg','images/4.jpg','images/5.jpg','images/6.jpg','images/7.jpg'];
+	rand=Math.random();
+	tot=arr.length;
+	sub=Math.floor(tot*rand);
+	img=document.getElementById('gitimg');
+	img.src=arr[sub];
+</script>
+</html>
